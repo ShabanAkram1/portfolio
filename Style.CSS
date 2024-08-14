@@ -1,0 +1,350 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase; /* This line capitalizes the text */
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+ /* Main Section*/
+ .main{
+    background-size: cover;
+    width: 100% ;
+    height: 100%;
+ }
+ .main h3{
+    font-size: 4.4rem;
+    font-weight: 700;
+ }
+ .main h3 small{
+    font-size: 3.3rem;
+    font-weight: 350;
+ }
+ .main h6{
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    line-height: 1;border-bottom: 3px solid ;
+    width: 40%;
+    
+    margin: 0 auto;
+ }
+ .bt1 {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.bt1:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid;
+    transition: 0.5s;
+}
+.bt2 {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid;
+}
+
+.bt2:hover {
+    background-color: black;
+    color: white;
+    border:none;
+    transition:0.5s;
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .main h3 {
+        font-size: 3rem;
+    }
+
+    .main h6 {
+        font-size: 1.2rem;
+        width: 60%;
+    }
+
+    .nav-links li {
+        margin-left: 10px;
+    }
+
+    .main .bt1, .main .bt2 {
+        width: 120px;
+        height: 45px;
+    }
+}
+.font-weight-bold {
+    font-weight: bold;
+}
+h1{
+    font-size: 3rem;
+    font-weight: 900;
+}
+/* Progress Bar Container */
+.progress {
+    background-color: #eee; /* Light background for the container */
+    border-radius: 50px;
+    overflow: hidden; /* Ensures the progress bar respects the border-radius */
+    height: 25px; /* Match the height of the .pro-value1 */
+    width: 100%; /* Full width of the parent container */
+    position: relative; /* Relative positioning for the progress bar */
+}
+
+/* Progress Bar Value */
+.pro-value1 {
+    animation: load1 3s forwards;
+    border-radius: 50px;
+    background-color: black;
+    height: 100%; /* Fill the height of the .progress container */
+    width: 0; /* Start with width 0 */
+    position: relative; /* Positioning for internal elements */
+}
+
+/* Text inside the progress bar */
+.pro-value1 p {
+    color: white;
+    padding: 0 12px; /* Horizontal padding for spacing */
+    margin: 0; /* Remove default margin */
+    line-height: 25px; /* Center the text vertically */
+    position: absolute; /* Absolute positioning within the progress bar */
+    width: 100%; /* Full width to align text horizontally */
+    display: flex; /* Use flexbox to align items */
+    justify-content: space-between; /* Space between text items */
+    align-items: center; /* Center items vertically */
+}
+
+/* Fixed Position for Game Development */
+.game-development {
+    
+  
+    left: 12px; 
+}
+
+/* Percentage text */
+.text-white {
+    
+    color: white;
+    position: absolute; /* Absolute positioning within .pro-value1 */
+    right: 12px; /* Align to the right side */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Adjust for exact vertical centering */
+}
+
+.pro-value2 {
+    animation: load2 3s forwards;
+    border-radius: 50px;
+    background-color: black;
+    height: 100%; /* Fill the height of the .progress container */
+    width: 0; /* Start with width 0 */
+    position: relative; /* Positioning for internal elements */
+}
+.pro-value2 p {
+    color: white;
+    padding: 0 12px; /* Horizontal padding for spacing */
+    margin: 0; /* Remove default margin */
+    line-height: 25px; /* Center the text vertically */
+    position: absolute; /* Absolute positioning within the progress bar */
+    width: 100%; /* Full width to align text horizontally */
+    display: flex; /* Use flexbox to align items */
+    justify-content: space-between; /* Space between text items */
+    align-items: center; /* Center items vertically */
+}
+.pro-value3 {
+    animation: load3 3s forwards;
+    border-radius: 50px;
+    background-color: black;
+    height: 100%; /* Fill the height of the .progress container */
+    width: 0; /* Start with width 0 */
+    position: relative; /* Positioning for internal elements */
+}
+.pro-value3 p {
+    color: white;
+    padding: 0 12px; /* Horizontal padding for spacing */
+    margin: 0; /* Remove default margin */
+    line-height: 25px; /* Center the text vertically */
+    position: absolute; /* Absolute positioning within the progress bar */
+    width: 100%; /* Full width to align text horizontally */
+    display: flex; /* Use flexbox to align items */
+    justify-content: space-between; /* Space between text items */
+    align-items: center; /* Center items vertically */
+}
+.pro-value4 {
+    animation: load4 3s forwards;
+    border-radius: 50px;
+    background-color: black;
+    height: 100%; /* Fill the height of the .progress container */
+    width: 0; /* Start with width 0 */
+    position: relative; /* Positioning for internal elements */
+}
+.pro-value4 p {
+    color: white;
+    padding: 0 12px; /* Horizontal padding for spacing */
+    margin: 0; /* Remove default margin */
+    line-height: 25px; /* Center the text vertically */
+    position: absolute; /* Absolute positioning within the progress bar */
+    width: 100%; /* Full width to align text horizontally */
+    display: flex; /* Use flexbox to align items */
+    justify-content: space-between; /* Space between text items */
+    align-items: center; /* Center items vertically */
+}
+
+/* Keyframes for Progress Bar Animation */
+@keyframes load1 {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 70%; /* Adjust to the desired width */
+    }
+}
+@keyframes load2 {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 50%; /* Adjust to the desired width */
+    }
+}@keyframes load3 {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 40%; /* Adjust to the desired width */
+    }
+}@keyframes load4 {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 40%; /* Adjust to the desired width */
+    }
+}
+
+.btn1{
+    height: 40px;
+    width: 145px;outline: none;
+    border: none;
+    background-color: black;
+    color:white; border-radius: 4px;
+    transition: 0.5s;
+}
+.btn1:hover{
+    background-color: transparent;
+    color:black; 
+    border: 1px solid;
+}
+.btn2{
+    height: 40px;
+    width: 145px;outline: none;
+    border: 1px solid;
+    background-color: transparent;
+    color:black; border-radius: 4px;
+    transition: 0.5s;
+}
+.btn2:hover{
+    background-color: black;
+    color: white;
+}
+
+
+.control ul li{
+    list-style: none;
+    background-color: black;padding: 5px 15px;
+    color: white;display: inline-block;
+    cursor: pointer ;
+}
+.item{
+    position: relative;
+}
+.item:hover{
+    -webkit-box-shadow: -8px 6px 89px -33px rgba(0,0,0,0.75);
+    -moz-box-shadow: -8px 6px 89px -33px rgba(0,0,0,0.75);
+    box-shadow: -8px 6px 89px -33px rgba(0,0,0,0.75);
+    transition: 0.5s;
+}
+.item span{
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    font-size: 40px;
+    color: black;
+    cursor: pointer;
+    opacity: 0;
+}
+.item:hover span{
+    opacity: 1;
+    transition: 0.5s;
+}
+item::before{
+    content: "";
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(238,235,230,0.644);
+    opacity: 1;
+    position: absolute;
+}
+footer{
+    background-color:  black;
+    color: white;
+}
+
+.carousel-inner{
+    margin-bottom: 50px;
+}
+
+.contacticon{
+    width: 50px;
+    height: 50px;
+}
